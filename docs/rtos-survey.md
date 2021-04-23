@@ -48,12 +48,53 @@ Resources:
 
 Below are a couple of mainstay free RTOS systems; I’m not sure about their adoption into space or rocketry applications.
 
-FreeRTOS - http://www.freertos.org/
-eCos - http://ecos.sourceware.org/
+### FreeRTOS
 
-I also have not included VxWorks,
-which has been the mainstay of many interplanetary programs.
+Arguably the most popular open source RTOS.
+Began around 2003, maintained by Real Time Engineers Ltd,
+until 2017, when stewardship was passed to AWS.
+Supported by many embedded board vendors.
+
+Variants include:
+- OpenRTOS - commercially licensed version from Wittenstein.
+- SafeRTOS - proprietary derivative analyzed and tested for
+  safety-critical application from Wittenstein.
+
+Resources:
+- main site: http://www.freertos.org/
+- Github: https://github.com/FreeRTOS/FreeRTOS
+
+### eCOS
+Began in 1997 by Cygnus Solutions which was later acquired by RedHat.
+Rights transferred to Free Software Foundation in 2004.
+Last release was in March 2009.
+
+Resources:
+- main site: http://ecos.sourceware.org/
+
+### Zephyr
+Major focus on connected devices or Internet of Things (IoT).
+Began in 2015 as the Rocket kernel by Wind River.
+Became a project of the Linux Foundation in 2016.
+Supported by many embedded board vendors.
+
+Resources:
+- main site: https://www.zephyrproject.org/
+- Github: https://github.com/zephyrproject-rtos/zephyr
+
+### VxWorks
+
+VxWorks is a proprietary RTOS from Wind River.
+It began as a series of enhancements to VRTX from Hunter-Ready
+(later Ready Systems).
+First release was in 1987.
+It has been the mainstay of many interplanetary programs.
+It is supported on a wide variety of architectures.
 (It is a really expensive commercial product.)
+
+Resources:
+
+- main site: https://www.windriver.com/products/vxworks
 
 ## Drone RTOSs
 
