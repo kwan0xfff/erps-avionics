@@ -124,6 +124,16 @@ However, this one proposes to use Xenomai V3, a co-resident real-time framework 
 Xenomai V2 seems to have been highly successful, but the framework code is very tightly coupled to the Linux kernel itself.
 And thus, you cannot blindly upgrade the Linux kernel without breaking the Xenomai framework.
 
+### Qualcomm Snapdragon Flight Kit
+https://ardupilot.org/copter/docs/common-qualcomm-snapdragon-flight-kit.html
+https://docs.px4.io/v1.9.0/en/flight_controller/snapdragon_flight.html
+
+The Snapdragon Flight platform utilizes the Snapdragon 801 processor, which includes a quad-core Krait CPU and Hexagon DSP.
+The Krait CPU is based on the ARM64 architecture and runs Linux.
+The Hexagon DSP is a multi-threaded VLIW (very long instruction word) architecture that runs the PX4 flight stack.
+The platform also includes a 9-axis accel/gyro/mag sensor, video, optical flow, etc.
+The Snapdragon Flight was adapted by NASA JPL to control the Mars helicopter, "Ingenuity".
+
 ## Drone software frameworks
 The domain of flight controllers has migrated to 32-bit processors with floating point,
 primarily the ST Microelectronics STM32F3/4/7 series,
