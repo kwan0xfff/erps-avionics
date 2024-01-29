@@ -16,13 +16,6 @@ As a result, I've been hunting for other alternatives. Below are some that stand
 
 ## Aerospace-originated RTOSs
 
-### core Flight Executive (cFE)
-
-Space flight application and run-time environment.
-
-Resources:
-- https://opensource.gsfc.nasa.gov/projects/cfe/index.php#software
-
 ### Portland State Aerospace Society (PSAS) Flight Computer
 
 PSAS seems to be doing lots of good stuff.
@@ -43,6 +36,26 @@ Furthermore, it is part of ESA Summer of Code in Space.
 Resources:
 - Main site: https://www.rtems.org/
 - Summer of Code 2014: https://www.rtems.org/node/109
+
+## Aerospace-originated flight software frameworks
+
+### core Flight Executive (cFE) and Core Flight System (cFS)
+
+cFE is the spaceflight application and run-time environment of the Core Flght System (cFS).
+It was first demonstrated in June 2009 on the Lunar Reconnaissance Orbiter (LRO),
+and later on LADEE (September 2013) and Parker Solar Probe (August 2018).
+It has been chosen to manage autonomous operations on NASA's Lunar Gateway in the mid/late 2020s.
+
+cFE provides a common API for flight applications.
+It is layered on type of an OS Abstraction Layer (OSAL) and Platform Support Pacakge (PSP).
+The OS beneath the OSAL can be RTEMS, VxWorks, or Linux.
+
+Resources:
+- https://opensource.gsfc.nasa.gov/projects/cfe/index.php#software
+- https://cfs.gsfc.nasa.gov/
+- https://github.com/nasa/cFE
+- https://github.com/nasa/cFS
+- cFS training slides (2021): https://ntrs.nasa.gov/api/citations/20205011588/downloads/TM%2020205000691%20REV%201.pdf
 
 ## General RTOSs
 
