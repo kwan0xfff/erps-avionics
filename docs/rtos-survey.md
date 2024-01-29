@@ -57,6 +57,26 @@ Resources:
 - https://github.com/nasa/cFS
 - cFS training slides (2021): https://ntrs.nasa.gov/api/citations/20205011588/downloads/TM%2020205000691%20REV%201.pdf
 
+### F' (F Prime), F'' (F Prime Prime)
+
+F´ (F Prime) is a multi-platform framework for spaceflight and other embedded software applications.
+Originally developed at JPL, it has been successfully deployed on several space applications, including:
+Mars Helicopter (Ingenuity), Lunar Flashlight (CubeSat), and Near Earth Asteroid Scout (NEA Scout).
+It was initially designed for smaller projects like instruments, CubeSats, and smallsats.
+
+The F' architecture builds heavily on the concepts of "components" and "ports", and connecting them into a "topology".
+These are described in the F'' (F Prime Prime, or FPP) domain-specific modeling language (DSL) for F'.
+F'' tools generate C++ code for implementation and testing and XML for command and telemetry dictionaries.
+The developer then writes implementation classes in C++ for the F''-generated interfaces.
+
+Resources:
+- F' website: https://nasa.github.io/fprime/
+- F' course materials: https://github.com/fprime-community/fprime-course-materials/tree/master
+- F' implementation on baremetal (notably Arduino): https://github.com/fprime-community/fprime-baremetal-reference
+- F' implementation running on Zephyr: https://github.com/fprime-community/fprime-zephyr
+- FPP: https://fprime-community.github.io/fpp/
+- FPP User's Guide: https://fprime-community.github.io/fpp/fpp-users-guide.html
+
 ## General RTOSs
 
 Below are a couple of mainstay free RTOS systems; I’m not sure about their adoption into space or rocketry applications.
